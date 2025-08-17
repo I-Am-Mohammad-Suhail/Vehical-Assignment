@@ -1,0 +1,51 @@
+[
+  {
+    "date": "2025-05-01",
+    "state": "DL",
+    "vehicleType": "2W",
+    "manufacturer": "Hero",
+    "count": 1200
+  },
+  {
+    "date": "2025-05-02",
+    "state": "DL",
+    "vehicleType": "2W",
+    "manufacturer": "Honda",
+    "count": 980
+  },
+  {
+    "date": "2025-05-15",
+    "state": "DL",
+    "vehicleType": "4W",
+    "manufacturer": "Maruti",
+    "count": 300
+  },
+  {
+    "date": "2025-06-10",
+    "state": "MH",
+    "vehicleType": "3W",
+    "manufacturer": "Bajaj",
+    "count": 200
+  },
+  {
+    "date": "2025-06-20",
+    "state": "MH",
+    "vehicleType": "4W",
+    "manufacturer": "Tata",
+    "count": 450
+  },
+  {
+    "date": "2025-07-05",
+    "state": "KA",
+    "vehicleType": "2W",
+    "manufacturer": "TVS",
+    "count": 700
+  },
+  {
+    "date": "2024-07-05",
+    "state": "KA",
+    "vehicleType": "2W",
+    "manufacturer": "TVS",
+    "count": 650
+  }
+]

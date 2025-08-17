@@ -1,0 +1,35 @@
+{
+  "name": "vehical-assignment",
+  "version": "1.0.0",
+  "description": "Vehicle registration analytics backend (Vahan-style) with YoY & QoQ metrics",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "seed": "node src/scripts/seed.js",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "mongoose",
+    "analytics",
+    "vehicle",
+    "vahan"
+  ],
+  "author": "You",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "mongoose": "^8.5.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "eslint": "^9.10.0"
+  }
+}
