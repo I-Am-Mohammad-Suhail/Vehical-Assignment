@@ -1,30 +1,35 @@
-# Vehical Assignment (Backend)
+# Vehicle Registration Analytics Dashboard (Vahan Data)
 
-Node.js + Express + MongoDB backend for vehicle registration analytics (Vahan-style). 
-Features:
-- Manufacturer-wise and vehicle-type-wise summaries
-- YoY (Year-over-Year) and QoQ (Quarter-over-Quarter) growth
-- Flexible filters: state, date range, manufacturer, type
-- Seed script with sample data
-- CORS, Helmet, Morgan, ENV config
+## 📌 Project Overview
+This project is a simple **backend + dashboard** that analyzes Indian vehicle registration data (sourced from the **Vahan Dashboard**).  
+It provides insights into:
+- Vehicle type-wise registrations (2W, 3W, 4W)
+- Manufacturer-wise market share
+- Growth trends (Year-over-Year and Quarter-over-Quarter)
 
-## Quick Start
+The goal is to present this from an **investor’s perspective** – highlighting which vehicle categories and manufacturers are growing fastest.
 
+---
+
+## 🚀 Setup Instructions
+
+### Prerequisites
+- Node.js (>= 16)
+- MongoDB (local or Atlas)
+
+### Steps to Run
 ```bash
-# 1) Install
+# 1. Clone the repo
+git clone <your-repo-link>
+
+# 2. Go inside project folder
+cd vehical-assignment
+
+# 3. Install dependencies
 npm install
 
-# 2) Configure
-cp .env.example .env
-# Update MONGODB_URI if needed
-
-# 3) Seed sample data
-npm run seed
-
-# 4) Run
-npm run dev
-# API on http://localhost:4000
-```
+# 4. Start the server
+npm start
 
 ## API Endpoints
 
@@ -40,28 +45,5 @@ npm run dev
 - `GET /api/manufacturers/top?from=YYYY-MM-DD&to=YYYY-MM-DD&limit=10&state=DL&type=2W`  
   Top manufacturers by registrations.
 
-### Query Rules
-- If `from`/`to` missing: defaults to last 90 days.
-- Types allowed: `2W`, `3W`, `4W`.
-- Dates must be `YYYY-MM-DD`.
-
-## Project Structure
-```
-src/
-  server.js
-  app.js
-  db.js
-  models/Registration.js
-  routes/index.js
-  controllers/analyticsController.js
-  utils/dateRanges.js
-  middleware/error.js
-  scripts/seed.js
-data/
-  sample.json
-.env.example
-```
-
-## Notes
 - Replace sample data with real Vahan-extracted records for production.
 - All aggregations use MongoDB pipelines for performance.
